@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color_start">#5896C0</color>
+    <color name="back_color_end">#611FA3</color>
+    <color name="yellow">#FEB441</color>
+    <color name="violet_button">#4E1686</color>
+    <color name="violet">#4E1686</color>
+    <color name="gray">#686868</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

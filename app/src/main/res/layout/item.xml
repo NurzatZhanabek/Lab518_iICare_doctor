@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="2px"
+    android:layout_width="match_parent"
+    android:background="@drawable/item_background"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:id="@+id/block_t1"
+        android:layout_width="110dp"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/grad3"
+        >
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="60dp"
+            android:layout_margin="4dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_enhanced_encryption_black_24dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/for_what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/violet"
+            android:textSize="12dp"
+            android:text="Вызов врача на дом"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="16 декабря"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="08:30 - 12:30"
+                    android:textAlignment="center"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/block_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_weight="2"
+                android:id="@+id/title_simptom"
+                android:textColor="@color/violet"
+                android:layout_margin="5dp"
+                android:text="Здесь будет надоевший вам симптом"/>
+            <TextView
+                android:id="@+id/review"
+                android:layout_marginTop="5dp"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18 отзывов"
+                android:textColor="@color/violet"
+                android:textAlignment="center"
+
+                />
+
+
+        </LinearLayout>
+
+        <com.example.nurzat.lab_doctor.RowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/block_speciality">
+
+
+        </com.example.nurzat.lab_doctor.RowLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Комментарий)"
+            android:layout_margin="1dp"
+            android:textColor="@color/violet"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content">
+            <com.example.nurzat.lab_doctor.RowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/pad"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/block_address">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Район(ы): "
+                    android:textColor="@color/violet"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </com.example.nurzat.lab_doctor.RowLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/pad">
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:id="@+id/btn_address"
+                    android:layout_width="80dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="25dp"
+                    android:background="@drawable/shape_2"
+                    android:text="2500тг"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/txt_expect"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/violet"
+                    android:textSize="12dp"
+                    android:text="Ожидание ответа"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
